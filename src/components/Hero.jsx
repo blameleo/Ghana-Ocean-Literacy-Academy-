@@ -20,7 +20,7 @@ const Hero = () => {
           Marine Engineering
         </h1>
         <p className="sm:w-1/3 text-lg py-2 mx-auto sm:mx-0  pt-5  ">
-          Dummy text can go here
+          Dummy text can go here.
         </p>
       </div>
     </div>
