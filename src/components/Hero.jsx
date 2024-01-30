@@ -1,16 +1,30 @@
-import { Carousel } from '@material-tailwind/react'
-import React from 'react'
+import { Carousel } from "@material-tailwind/react";
+import React from "react";
+import backgroundImage from "../assets/backimage.png";
 
 const Hero = () => {
   return (
-    <Carousel className="rounded-lg">
-    <img
-      src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-      alt="image 3"
-      className="h-full w-full object-cover"
-    />
-  </Carousel>
-  )
-}
+    // <Carousel className="border border-red-500">
+    //   <img
+    //     src={backgroundImage}
+    //     alt="image 3"
+    //     className="h-full w-full object-cover"
+    //   />
+    // </Carousel>
+    <div
+      style={{ backgroundImage: "url(" + backgroundImage + ")" }}
+      className="  h-screen object-cover bg-cover bg-center"
+    >
+      <div className="text-white sm:pt-64  px-4  pt-[110%]">
+        <h1 className="text-white sm:text-7xl font-bold text-center sm:text-left text-xl">
+          Marine Engineering
+        </h1>
+        <p className="sm:w-1/3 text-lg py-2 mx-auto sm:mx-0  pt-5  ">
+          Dummy text can go here
+        </p>
+      </div>
+    </div>
+  );
+};
 
-export default Hero
+export default Hero;
