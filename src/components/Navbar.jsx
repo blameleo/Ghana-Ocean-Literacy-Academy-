@@ -9,7 +9,7 @@ import { GiAquarium } from "react-icons/gi";
 
 const Navbar = () => {
   return (
-    <nav className=" flex justify-between  py-3 fixed shadow-xl px-5 bg-[#0c162c]  z-10 w-full">
+    <nav className=" flex justify-between  py-3  shadow-xl px-5 bg-[#0c162c]  z-10 w-full">
       <div className="font-bold col-span-4  left-10 text-white top-10 ">
         <Link to="/">
           <GiAquarium size={50} />
