@@ -5,10 +5,7 @@ export const Teams = () => {
   return (
     <div className="bg-[#0c162c]   h-[90vh]">
       <div className="flex items-end justify-center h-[90vh] ">
-        <div
-          // style={{ backgroundImage: "url(" + teamImg + ")" }}
-          className=" w-[18%] h-[70%] rounded-t-[220px] bg-[#feb2cc] text-center bg-contain bg-no-repeat teams-card"
-        >
+        <div className=" w-[18%] h-[70%] rounded-t-[220px] bg-[#feb2cc] text-center bg-contain bg-no-repeat teams-card">
           <h1 className="text-center pt-20 font-bold">Jennifer</h1>
           <p>Ceo</p>
           <div className=" p-5  ">
