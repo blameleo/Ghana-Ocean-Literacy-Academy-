@@ -1,5 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap')
+body {
+  font-family: "Gamja Flower", sans-serif;
+}
+
+.teams-card {
+  /* display: block;
+    top: 0px;
+    position: relative; */
+
+  /* background-color: #f2f8f9; */
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 20px;
+  /* border: 1px solid #f2f8f9; */
+  height: 400px;
+  transition: box-shadow 0.3s ease-in-out, height 0.5s;
+}
+
+.card-content {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s, visibility 1s;
+}
+
+.teams-card:hover {
+  height: 610px;
+
+  .card-content {
+    opacity: 1;
+    display: block;
+  }
+
+  .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+}

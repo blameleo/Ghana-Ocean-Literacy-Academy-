@@ -6,17 +6,19 @@ import { GiWaterfall } from "react-icons/gi";
 
 const About = () => {
   return (
-    <div className="sm:grid grid-cols-12 h-dvh ">
+    <div className="sm:grid grid-cols-12 h-[90dvh] ">
       <div
         style={{ backgroundImage: "url(" + aboutimageone + ")" }}
         className="col-span-3  bg-cover"
       ></div>
       <div className="col-span-9  grid place-items-center bg-[#f0e1c9] py-10 sm:py-0">
         <div className="w-1/2 text-center">
-          <h1 className="text-5xl font-bold text-pink-400">ABOUT US</h1>
+          <h1 className="text-7xl font-bold text-pink-400">ABOUT US</h1>
 
-          <p className="text-[#616974] font-semibold py-5">lorem ipsum dilor</p>
-          <p>
+          <p className="text-[#616974] font-semibold py-5 text-lg">
+            lorem ipsum dilor
+          </p>
+          <p className="text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
             odit, ipsam, alias voluptates similique suscipit voluptas dolores
             nulla porro possimus tenetur libero asperiores quod. Voluptate
@@ -29,10 +31,10 @@ const About = () => {
           <div className="flex justify-center">
             <IoWaterOutline size={40} className="text-pink-400" />
           </div>
-          <h1 className="text-pink-600 font-black py-3 text-lg">
+          <h1 className="text-pink-600 font-black py-3 text-xl">
             Learn marine science
           </h1>
-          <p className="w-1/2 mx-auto text-pink-100">
+          <p className="w-1/2 mx-auto text-pink-100 text-lg">
             Learn with no restrictions a wide range of producsts are now one
             click away
           </p>
@@ -43,10 +45,10 @@ const About = () => {
           <div className="flex justify-center">
             <GiWaterfall size={40} className="text-pink-400" />
           </div>
-          <h1 className="text-pink-600 font-black py-3 text-lg">
+          <h1 className="text-pink-600 font-black py-3 text-xl">
             Learn marine science
           </h1>
-          <p className="w-1/2 mx-auto text-pink-100">
+          <p className="w-1/2 mx-auto text-pink-100 text-lg">
             Learn with no restrictions a wide range of producsts are now one
             click away
           </p>

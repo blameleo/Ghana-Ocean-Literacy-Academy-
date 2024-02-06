@@ -13,7 +13,7 @@ const Hero = () => {
     // </Carousel>
     <div
       style={{ backgroundImage: "url(" + backgroundImage + ")" }}
-      className="  h-screen object-cover bg-cover bg-center"
+      className="h-[90vh] object-cover bg-cover bg-center"
     >
       {/* <div className="text-white sm:pt-64  px-4  pt-[110%]">
         <h1 className="text-white sm:text-7xl font-bold text-center sm:text-left text-xl">

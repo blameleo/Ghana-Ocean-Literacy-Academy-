@@ -11,15 +11,15 @@ const Navbar = () => {
   const location = useLocation();
   const currentUrl = location.pathname;
   return (
-    <nav className=" flex justify-between  py-3  shadow-xl px-5 bg-[#0c162c]  z-10 w-full">
-      <div className="font-bold col-span-4  left-10 text-white top-10 ">
+    <nav className=" flex justify-between items-center text-lg   shadow-xl px-5 bg-[#0c162c] h-[10vh]">
+      <div className="  text-white  ">
         <Link to="/">
           <GiAquarium size={50} />
         </Link>
       </div>
 
       <div className=" col-span-8 flex justify-end sm:justify-start">
-        <ul className="md:flex    gap-20 hidden">
+        <ul className="md:flex   items-center gap-20 hidden">
           <Link to="/about">
             <div
               className={`flex flex-col items-center cursor-pointer  hover:border-b-4 pb-2 transition duration-300 ease-in-out ${
@@ -69,6 +69,12 @@ const Navbar = () => {
               <AiOutlineThunderbolt size={25} />
               <p className="">Activities</p>
             </div>
+          </Link>
+
+          <Link>
+            <button className=" cursor-pointer  hover:border-b-4  transition duration-300 ease-in-out text-white  p-3 rounded bg-pink-400">
+              Log in{" "}
+            </button>
           </Link>
         </ul>
 
