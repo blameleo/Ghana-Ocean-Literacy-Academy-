@@ -12,8 +12,10 @@ const About = () => {
         className="col-span-3  bg-cover"
       ></div>
       <div className="col-span-9  grid place-items-center bg-[#f0e1c9] py-10 sm:py-0">
-        <div className="w-1/2 text-center">
-          <h1 className="text-7xl font-bold text-pink-400">ABOUT US</h1>
+        <div className="sm:w-1/2 text-center ">
+          <h1 className="sm:text-7xl text-4xl font-bold text-pink-400">
+            ABOUT US
+          </h1>
 
           <p className="text-[#616974] font-semibold py-5 text-lg">
             lorem ipsum dilor

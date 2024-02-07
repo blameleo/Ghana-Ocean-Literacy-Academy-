@@ -6,14 +6,14 @@ const Hero = () => {
   return (
     <div
       style={{ backgroundImage: "url(" + backgroundImage + ")" }}
-      className="h-[90vh] object-cover bg-cover bg-center"
+      className="h-[90vh] object-cover bg-cover bg-center flex sm:items-center items-end"
     >
-      <div className="text-white sm:pt-64  px-4  pt-[110%]  w-[50%] relative">
-        <div className="w-[40%] h-[10px] bg-pink-500 absolute right-[130px] top-[70%] -z-0 transform rotate-0"></div>
-        <h1 className="text-white sm:text-8xl font-bold text-center  text-xl z-10 relative">
+      <div className="text-white   px-4  ml-0 sm:ml-20    relative  pt-[50px] ">
+        <div className="w-[200px] h-[10px] bg-pink-500 absolute right-[130px] sm:top-[110px] top-[180px] -z-0 transform rotate-0  sm:block"></div>
+        <h1 className="text-white  font-bold    z-10 text-7xl relative ">
           Marine <span className="text-yellow-500">Engineering</span>
         </h1>
-        <p className="text-center py-10 text-lg w-[50%] mx-auto">
+        <p className="text-center py-10 text-lg">
           Dummy text can go here.Dummy text can go here Dummy text can go here
           Dummy text can go here
         </p>

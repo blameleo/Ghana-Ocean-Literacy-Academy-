@@ -14,12 +14,12 @@ const Navbar = () => {
     <nav className=" flex justify-between items-center text-lg   shadow-xl px-5 bg-[#0c162c] h-[10vh]">
       <div className="  text-white  ">
         <Link to="/">
-          <GiAquarium size={50} />
+          <GiAquarium className="text-[40px] sm:text-[70px]" />
         </Link>
       </div>
 
       <div className=" col-span-8 flex justify-end sm:justify-start">
-        <ul className="md:flex   items-center gap-20 hidden">
+        <ul className="md:flex   items-center gap-16 hidden">
           <Link to="/about">
             <div
               className={`flex flex-col items-center cursor-pointer  hover:border-b-4 pb-2 transition duration-300 ease-in-out ${
@@ -70,16 +70,15 @@ const Navbar = () => {
               <p className="">Activities</p>
             </div>
           </Link>
-
-          <Link>
-            <button className=" cursor-pointer  hover:border-b-4  transition duration-300 ease-in-out text-white  p-3 rounded bg-pink-400">
-              Log in{" "}
-            </button>
-          </Link>
         </ul>
 
         <GiHamburger size={30} className="text-white md:hidden block " />
       </div>
+      <Link>
+        <button className=" cursor-pointer  hover:border-b-4  transition duration-300 ease-in-out text-white  p-3 rounded bg-pink-400">
+          Log in{" "}
+        </button>
+      </Link>
     </nav>
   );
 };

@@ -35,9 +35,26 @@ body {
     opacity: 1;
     display: block;
   }
+}
 
-  .go-corner {
-    transition: opactiy 0.3s linear;
+.teams-card-mobile {
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 20px;
+  height: 400px;
+  transition: box-shadow 0.3s ease-in-out, height 0.5s;
+
+  .card-content {
     opacity: 1;
+    display: hidden;
+  }
+}
+
+.teams-card-mobile:hover {
+  height: 470px;
+
+  .card-content {
+    opacity: 1;
+    display: block;
   }
 }
