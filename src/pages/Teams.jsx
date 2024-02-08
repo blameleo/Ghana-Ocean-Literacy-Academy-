@@ -100,8 +100,8 @@ export const Teams = () => {
   };
 
   return (
-    <div className="bg-[#0c162c]">
-      <h1 className="text-center pt-10 text-7xl text-white font-bold">
+    <div className="bg-[#0c162c] ">
+      <h1 className="text-center pt-10 text-7xl text-white font-bold px-5 sm:px-0">
         Meet the <span className="text-pink-600 underline"> Team</span>{" "}
       </h1>
 
@@ -112,7 +112,7 @@ export const Teams = () => {
         {renderTeamsCard()}
       </div>
 
-      <div className="grid    place-items-center sm:hidden bg-[#0c162c] ">
+      <div className="grid   place-items-center sm:hidden bg-[#0c162c] ">
         <Splide
           options={{
             gap: "1rem",
