@@ -1,39 +1,71 @@
 import React, { useState } from "react";
 import { FaDownload } from "react-icons/fa6";
 import { IoEyeSharp } from "react-icons/io5";
+import {
+  Button,
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
+} from "@material-tailwind/react";
+import pdflenevo from "../assets/IdeaPad_Slim_5_16IRL8_Spec.pdf";
+
 const EducationHub = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [open, setOpen] = React.useState(false);
+  const [currentPdf, setCurrentPdf] = useState("");
+
+  const handleOpen = (param) => {
+    setCurrentPdf(param);
+    setOpen(!open);
+  };
+
+  const handleDownload = (link, title) => {
+    // Construct a temporary anchor element
+    const anchor = document.createElement("a");
+    anchor.href = link;
+    anchor.download = `${title}.pdf`; // Set the filename for the downloaded file
+
+    // Trigger a click event on the anchor element
+    document.body.appendChild(anchor);
+    anchor.click();
+
+    // Clean up
+    document.body.removeChild(anchor);
+  };
 
   const pdfs = [
     {
       image:
         "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
       title: "marine science 101",
-      link: "https://drive.google.com/file/d/1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg/preview",
+      download:
+        "https://drive.google.com/uc?export=download&id=1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg",
     },
     {
       image:
         "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
       title: "a tale about life",
-      link: "",
+      link: "https://drive.google.com/file/d/1K7zwtkYF2H59JDs9B2s5t8hxIbl-G_qb/preview",
     },
     {
       image:
         "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
       title: "two young trolls",
-      link: "",
+      link: "https://drive.google.com/file/d/1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg/preview",
     },
     {
       image:
         "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
       title: "playground menace",
-      link: "",
+      link: "https://drive.google.com/file/d/1K7zwtkYF2H59JDs9B2s5t8hxIbl-G_qb/preview",
     },
     {
       image:
         "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
       title: "javascript is a blast",
-      link: "",
+      link: "https://drive.google.com/file/d/1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg/preview",
     },
   ];
 
@@ -58,13 +90,20 @@ const EducationHub = () => {
           <h1 className="text-center text-xl">{pdf.title}</h1>
 
           <div className="flex text-white justify-around pt-2 gap-10">
-            <button className="flex items-center justify-around  rounded w-28 bg-[#0c162c] py-2 hover:bg-green-800">
-              <FaDownload /> Download
-            </button>
-            <button className="flex items-center justify-around  rounded w-28 bg-pink-900 hover:bg-blue-800">
+            <Button
+              onClick={() => handleDownload(pdf.download, pdf.title)}
+              className="flex items-center justify-around  rounded w-28 bg-[#0c162c] py-2 hover:bg-green-800"
+            >
+              <FaDownload />
+              Download
+            </Button>
+            <Button
+              onClick={() => handleOpen(pdf.link)}
+              className="flex items-center justify-around  rounded w-28 bg-pink-900 hover:bg-blue-800"
+            >
               <IoEyeSharp />
               View
-            </button>
+            </Button>
           </div>
         </div>
       );
@@ -128,6 +167,24 @@ const EducationHub = () => {
       <div className="  grid sm:grid-cols-2 lg:grid-cols-4 gap-20 p-10 bg-[#0c162c]">
         {renderPdfs()}
       </div>
+      <Dialog
+        animate={{
+          mount: { scale: 1, y: 0 },
+          unmount: { scale: 0.9, y: -100 },
+        }}
+        open={open}
+        handler={handleOpen}
+      >
+        <div>
+          {" "}
+          <iframe
+            src={currentPdf}
+            width="100%"
+            height="700px"
+            title="PDF Viewer"
+          ></iframe>
+        </div>
+      </Dialog>
     </div>
   );
 };

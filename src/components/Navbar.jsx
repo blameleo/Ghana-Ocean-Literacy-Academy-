@@ -73,7 +73,7 @@ const Navbar = () => {
 
         <GiHamburger size={30} className="text-white md:hidden block " />
       </div>
-      <Link to="/login">
+      <Link to="/login" className="hidden">
         <button className=" cursor-pointer  hover:border-b-4  transition duration-300 ease-in-out text-white  p-3 rounded bg-pink-400">
           Log in{" "}
         </button>
