@@ -1,8 +1,85 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { FaDownload } from "react-icons/fa6";
+import { IoEyeSharp } from "react-icons/io5";
 const EducationHub = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const pdfs = [
+    {
+      image:
+        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+      title: "marine science 101",
+      link: "https://drive.google.com/file/d/1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg/view?usp=drive_link",
+    },
+    {
+      image:
+        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+      title: "a tale about life",
+      link: "",
+    },
+    {
+      image:
+        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+      title: "two young trolls",
+      link: "",
+    },
+    {
+      image:
+        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+      title: "playground menace",
+      link: "",
+    },
+    {
+      image:
+        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+      title: "javascript is a blast",
+      link: "",
+    },
+  ];
+
+  const renderPdfs = () => {
+    const filteredPdfs = pdfs.filter((pdf) =>
+      pdf.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    return filteredPdfs.map((pdf, index) => {
+      return (
+        <div
+          key={index}
+          className=" rounded bg-gray-100 h-[300px] p-5 hover:scale-105 transition duration-700"
+        >
+          <div className="">
+            <img
+              src={pdf.image}
+              alt=""
+              className="object-cover h-48 w-96 rounded"
+            />
+          </div>
+          <h1 className="text-center text-xl">{pdf.title}</h1>
+
+          <div className="flex text-white justify-around pt-2 gap-10">
+            <button className="flex items-center justify-around  rounded w-28 bg-[#0c162c] py-2 hover:bg-green-800">
+              <FaDownload /> Download
+            </button>
+            <button className="flex items-center justify-around  rounded w-28 bg-pink-900 hover:bg-blue-800">
+              <IoEyeSharp />
+              View
+            </button>
+          </div>
+        </div>
+      );
+    });
+  };
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
   return (
-    <div>
+    <div className="h-screen bg-[#0c162c]">
+      <h1 className="text-center text-white text-5xl pt-5">
+        {" "}
+        <span className="text-pink-500 underline">PDF</span> hub
+      </h1>
       <div className="bg-gradient-to-bl from-[#0c162c]  via-[#0c162c] to-pink-500 py-10 relative">
         <form className=" w-[50%] mx-auto ">
           <label
@@ -34,6 +111,8 @@ const EducationHub = () => {
               id="default-search"
               className="block w-full p-4 ps-10 outline-none text-sm text-black  border-gray-300 rounded-lg bg-gray-300  dark:bg-gray-700 dark:border-gray-600 placeholder-gray-600 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search pdfs"
+              value={searchTerm}
+              onChange={handleSearch}
               required
             />
             <button
@@ -46,7 +125,9 @@ const EducationHub = () => {
         </form>
       </div>
 
-      <div className="h-screen bg-[#0c162c]"></div>
+      <div className="  grid sm:grid-cols-2 lg:grid-cols-4 gap-20 p-10 bg-[#0c162c]">
+        {renderPdfs()}
+      </div>
     </div>
   );
 };

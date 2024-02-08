@@ -5,6 +5,8 @@ import Activities from "./pages/Activities";
 import EducationHub from "./pages/EducationHub";
 import { Teams } from "./pages/Teams";
 import Navbar from "./components/Navbar";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route exact path="/activities" element={<Activities />} />
           <Route exact path="/educationhub" element={<EducationHub />} />
           <Route exact path="/teams" element={<Teams />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>

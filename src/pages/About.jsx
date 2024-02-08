@@ -1,6 +1,5 @@
 import React from "react";
 import aboutimageone from "../assets/aboutimage.jpg";
-import aboutimagetwo from "../assets/aboutimagetwo.jpg";
 import { IoWaterOutline } from "react-icons/io5";
 import { GiWaterfall } from "react-icons/gi";
 

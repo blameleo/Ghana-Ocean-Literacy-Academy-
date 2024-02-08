@@ -3,7 +3,6 @@ import { LiaInfoSolid } from "react-icons/lia";
 import { MdOutlineGroups2, MdCastForEducation } from "react-icons/md";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { GiHamburger } from "react-icons/gi";
-import { IoLogoTux } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
 import { GiAquarium } from "react-icons/gi";
 
@@ -74,7 +73,7 @@ const Navbar = () => {
 
         <GiHamburger size={30} className="text-white md:hidden block " />
       </div>
-      <Link>
+      <Link to="/login">
         <button className=" cursor-pointer  hover:border-b-4  transition duration-300 ease-in-out text-white  p-3 rounded bg-pink-400">
           Log in{" "}
         </button>
