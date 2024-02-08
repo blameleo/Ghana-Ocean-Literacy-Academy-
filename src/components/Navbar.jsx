@@ -111,7 +111,7 @@ const Navbar = () => {
           openMobileMenu ? "translate-y-16" : "-translate-y-full"
         } absolute top-0 left-0 w-full z-20`}
       >
-        <ul className="grid bg-[#2b3c62] text-white text-center">
+        <ul className="grid bg-[#2b3c62] text-white text-center text-lg">
           <Link
             to="/"
             className="py-1 hover:bg-pink-500 w-[100%]"
