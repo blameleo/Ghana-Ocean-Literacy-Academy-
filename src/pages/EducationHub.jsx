@@ -179,14 +179,18 @@ const EducationHub = () => {
         open={open}
         handler={handleOpen}
       >
-        <div>
+        <div className="">
           {" "}
-          <iframe
-            src={currentPdf}
-            width="100%"
-            height="700px"
-            title="PDF Viewer"
-          ></iframe>
+          {currentPdf ? (
+            <iframe
+              src={currentPdf}
+              width="100%"
+              height="700px"
+              title="PDF Viewer"
+            ></iframe>
+          ) : (
+            <p>loading</p>
+          )}
         </div>
       </Dialog>
     </div>
