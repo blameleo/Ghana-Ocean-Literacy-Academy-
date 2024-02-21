@@ -122,7 +122,7 @@ export const Teams = () => {
         >
           <SplideSlide>
             <div
-              className={`  rounded-[12px] bg-zinc-500 text-center text-white h-fulls teams-card-mobile`}
+              className={`  rounded-[12px] bg-zinc-500 text-center text-white h-fulls `}
             >
               <h1 className="text-center pt-20 font-bold text-white uppercase text-xl">
                 jennifer
@@ -135,7 +135,7 @@ export const Teams = () => {
                   className="rounded-xl rounded-t-[12px] grayscale"
                 />
               </div>
-              <p className=" card-content text-white">
+              <p className="  text-white">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
                 suscipit earum ad molestiae ex vero esse dolores ea, repellendus
                 eos explicabo facere, quaerat debitis dicta rem reprehenderit,
@@ -146,7 +146,7 @@ export const Teams = () => {
 
           <SplideSlide>
             <div
-              className={` rounded-[12px] bg-zinc-500 text-center text-white  teams-card-mobile`}
+              className={` rounded-[12px] bg-zinc-500 text-center text-white  `}
             >
               <h1 className="text-center pt-20 font-bold text-white uppercase text-xl">
                 jennifer
@@ -159,7 +159,7 @@ export const Teams = () => {
                   className="rounded-xl rounded-t-[12px] grayscale"
                 />
               </div>
-              <p className=" card-content text-white">
+              <p className="  text-white">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
                 suscipit earum ad molestiae ex vero esse dolores ea, repellendus
                 eos explicabo facere, quaerat debitis dicta rem reprehenderit,
@@ -170,7 +170,7 @@ export const Teams = () => {
 
           <SplideSlide>
             <div
-              className={` rounded-[12px] bg-zinc-500 text-center text-white  teams-card-mobile`}
+              className={` rounded-[12px] bg-zinc-500 text-center text-white  `}
             >
               <h1 className="text-center pt-20 font-bold text-white uppercase text-xl">
                 jennifer
@@ -183,7 +183,7 @@ export const Teams = () => {
                   className="rounded-xl rounded-t-[12px] grayscale"
                 />
               </div>
-              <p className="card-content text-white">
+              <p className=" text-white">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
                 suscipit earum ad molestiae ex vero esse dolores ea, repellendus
                 eos explicabo facere, quaerat debitis dicta rem reprehenderit,
