@@ -16,32 +16,48 @@ export const Teams = () => {
     },
 
     {
-      name: "James",
-      title: "Project Coordinator",
+      name: "Kingsley Kojo Darko Abaye",
+      title: " Programme Manager",
       image: teamImg,
       cardColor: "#c8d6d6",
       about:
         "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
     },
     {
-      name: "Thomas",
-      title: "Course Instructor",
+      name: "Tyronne Jude Vanderpuye-Orgle",
+      title: "Communications Co-Lead",
       image: teamImg,
       cardColor: "#e5dcd3",
       about:
         "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
     },
     {
-      name: "Stacy",
-      title: "Tutor",
+      name: "Enid Akorfa",
+      title: "Communications Co-Lead",
       image: teamImg,
       cardColor: "#ffcd00",
       about:
         "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
     },
     {
-      name: "Ewurama",
-      title: "Tutor",
+      name: "Dorcas Antwi",
+      title: "Adventure Manager",
+      cardColor: "#ffdebb",
+      image: teamImg,
+      about:
+        "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
+    },
+    {
+      name: "Comfort Opoku",
+      title: "Education and Outreach Facilitator",
+      cardColor: "#ffdebb",
+      image: teamImg,
+      about:
+        "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
+    },
+    {
+      name: "Samuel Tawiah",
+      title: "Lab Facilitator",
       cardColor: "#ffdebb",
       image: teamImg,
       about:

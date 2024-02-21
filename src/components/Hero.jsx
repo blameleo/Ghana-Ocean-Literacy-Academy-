@@ -14,11 +14,6 @@ const Hero = () => {
         Future Ocean <span className="text-yellow-500">Leaders Academy</span>
         </h1>
         <p className="text-center py-10 text-lg">
-        To inspire and empower the next generation of ocean enthusiasts to become
-        <p> informed decision-makers and advocates for marine environmental protection.</p>
-       
-        </p>
-        <p className="text-center py-10 text-lg">
         Empowering Tomorrow’s Ocean Leaders Today.
         </p>
       </div>
