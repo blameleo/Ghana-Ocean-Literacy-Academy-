@@ -121,7 +121,7 @@ export const Teams = () => {
         Meet the <span className="text-pink-600 underline"> Team</span>{" "}
       </h1>
 
-      <div className="sm:flex items-end justify-center  hidden  h-[90dvh] relative">
+      <div className="sm:flex items-end justify-center hidden h-[78dvh]  relative">
         <div className="text-white text-8xl absolute top-32 animate-pulse">
           <MdKeyboardDoubleArrowUp />
         </div>

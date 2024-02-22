@@ -6,6 +6,7 @@
 
 body {
   font-family: "Gamja Flower", sans-serif;
+  
 }
 
 .teams-card {
@@ -15,22 +16,27 @@ body {
 
   /* background-color: #f2f8f9; */
   text-decoration: none;
+  cursor: pointer;
   overflow: hidden;
   box-shadow: 20px;
   /* border: 1px solid #f2f8f9; */
-  height: 400px;
-  transition: box-shadow 0.3s ease-in-out, height 0.5s;
+  height: 48%;
+  transition: box-shadow 0.3s ease-in-out, height 0.5s , width 0.5s;
 }
 
 .card-content {
+  /* padding-bottom: 1em ; */
   opacity: 0;
+  cursor: pointer;
+  height: 20%;
+  overflow-y: scroll;
   display: none;
   transition: opacity 1s, visibility 1s;
 }
 
 .teams-card:hover {
-  height: 610px;
-
+  height: 92%;
+  width: 40%;
   .card-content {
     opacity: 1;
     display: block;
@@ -57,4 +63,20 @@ body {
     opacity: 1;
     display: block;
   }
+}
+
+html::-webkit-scrollbar {
+  width: 1em;
+  position: hidden;
+}
+ 
+html::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+ 
+html::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  
 }

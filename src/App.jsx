@@ -10,7 +10,7 @@ import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <div className="bg-[#0c162c]  h-[100dvh] px-">
+    <div className="bg-[#0c162c]  h-[100dvh] ">
       <BrowserRouter>
         <Navbar />
         <Routes>
