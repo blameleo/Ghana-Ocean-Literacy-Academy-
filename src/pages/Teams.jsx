@@ -7,41 +7,57 @@ import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 export const Teams = () => {
   const members = [
     {
-      name: "Jennifer",
-      title: "Ceo",
+      name: "Dr. Edem Mahu",
+      title: "Director",
       image: teamImg,
       cardColor: "#feb2cc",
       about:
-        "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
+        "Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the University of Ghana. Her teaching and research span paleoclimatic and environmental reconstructions of marine ecosystems, marine pollution (nutrients, microplastics, heavy metals and their impact on the ocean and human health), marine conservation, and nature-based approaches to coastal challenges. She currently leads the National Geographic Society project “Oyster Reef Restoration and Conservation for Livelihood and Ecosystem Protection in Anyanui” She co-leads the MANCOGA: Mangroves as nature-based solutions to coastal hazards in Ghana project. Dr. Mahu is a Fellow of the Royal Society's Future Leaders African Independent Research (FLAIR) Programme. She is also a research fellow on the African Academy of Sciences' AU-EU ARISE Programme, leading the study Oyster Shell Models for Hindcasting Holocene Environmental Conditions in Equatorial Atlantic Coastal Waters of Africa. She is a member of the trustee board for the partnership for observation of the global oceans, a steering committee member for CoastPredict, a member of the executive board of the Global Ocean Corps and Conveyor, EQUISEA, a member of the academic board for the College of basic and applied sciences academic board at the University of Ghana. She also serves on the board of The Ocean Best Practices system. Dr. Mahu has received several awards and recognitions including being the recipient of the 2022 AGU Africa Award for Research Excellence in Ocean Science. Dr. Mahu is passionate about mentoring the next generation of marine scientists in Africa and has mentored several undergraduates and graduate students in Ghana. She is a current mentor on the National Geographic STEM Field Assistant Program",
     },
 
     {
-      name: "kingsley",
-      title: "software engineer",
+      name: "Kingsley Kojo Darko Abaye",
+      title: " Programme Manager",
       image: teamImg,
       cardColor: "#c8d6d6",
       about:
         "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
     },
     {
-      name: "Thomas",
-      title: "marketing",
+      name: "Tyronne Jude Vanderpuye-Orgle",
+      title: "Communications Co-Lead",
       image: teamImg,
       cardColor: "#e5dcd3",
       about:
         "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
     },
     {
-      name: "nicholas",
-      title: "auditor",
+      name: "Enid Akorfa",
+      title: "Communications Co-Lead",
       image: teamImg,
       cardColor: "#ffcd00",
       about:
         "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
     },
     {
-      name: "Ewurama",
-      title: "accountant",
+      name: "Dorcas Antwi",
+      title: "Adventure Manager",
+      cardColor: "#ffdebb",
+      image: teamImg,
+      about:
+        "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
+    },
+    {
+      name: "Comfort Opoku",
+      title: "Education and Outreach Facilitator",
+      cardColor: "#ffdebb",
+      image: teamImg,
+      about:
+        "llorem,fsdfs.sdfhuisdf, sdfhsufsdf,suidfsdf,sduihf sdfiusdgfhs fh dsafga fugdsh faksdgh fgags hdfhajshdfh asjdf  uihsdgfhagsdf iauew9 ershdafjsdf",
+    },
+    {
+      name: "Samuel Tawiah",
+      title: "Lab Facilitator",
       cardColor: "#ffdebb",
       image: teamImg,
       about:

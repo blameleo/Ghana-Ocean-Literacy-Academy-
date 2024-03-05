@@ -11,11 +11,10 @@ const Hero = () => {
       <div className="text-white   px-4  ml-0 sm:ml-20    relative  pt-[50px] ">
         <div className="w-[200px] h-[10px] bg-pink-500 absolute right-[130px] sm:top-[110px] top-[180px] -z-0 transform rotate-0  sm:block"></div>
         <h1 className="text-white  font-bold    z-10 text-7xl relative ">
-          Marine <span className="text-yellow-500">Engineering</span>
+        Future Ocean <span className="text-yellow-500">Leaders Academy</span>
         </h1>
         <p className="text-center py-10 text-lg">
-          Dummy text can go here.Dummy text can go here Dummy text can go here
-          Dummy text can go here
+        Empowering Tomorrow’s Ocean Leaders Today.
         </p>
       </div>
     </div>
