@@ -24,7 +24,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <nav className=" flex justify-between items-center text-lg   shadow-xl px-5 bg-[#0c162c] h-[10vh]">
+      <nav className=" flex justify-between items-center text-xl   shadow-xl px-5 bg-[#0c162c] h-[10vh]">
         <div className="  text-white  ">
           <Link to="/">
             <GiAquarium className="text-[40px] sm:text-[70px]" />
@@ -111,7 +111,7 @@ const Navbar = () => {
           openMobileMenu ? "translate-y-16" : "-translate-y-full"
         } absolute top-0 left-0 w-full z-20`}
       >
-        <ul className="grid bg-[#2b3c62] text-white text-center text-lg">
+        <ul className="grid bg-[#2b3c62] text-white text-center text-xl">
           <Link
             to="/"
             className="py-1 hover:bg-pink-500 w-[100%]"

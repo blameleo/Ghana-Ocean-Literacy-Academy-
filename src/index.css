@@ -1,11 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   font-family: "Gamja Flower", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .teams-card {
@@ -19,18 +40,13 @@ body {
   box-shadow: 20px;
   /* border: 1px solid #f2f8f9; */
   height: 400px;
-  transition: box-shadow 0.3s ease-in-out, height 0.5s;
-}
-
-.card-content {
-  opacity: 0;
-  display: none;
-  transition: opacity 1s, visibility 1s;
+  transition: box-shadow 0.3s ease-in-out, height 0.5s , width 0.5s;
+  
 }
 
 .teams-card:hover {
-  height: 610px;
-
+  height: 670px;
+width: 40%;
   .card-content {
     opacity: 1;
     display: block;
@@ -41,20 +57,23 @@ body {
   text-decoration: none;
   overflow: hidden;
   box-shadow: 20px;
-  height: 400px;
+  height: 580px;
   transition: box-shadow 0.3s ease-in-out, height 0.5s;
-
-  .card-content {
-    opacity: 1;
-    display: hidden;
-  }
 }
 
-.teams-card-mobile:hover {
-  height: 470px;
 
-  .card-content {
-    opacity: 1;
-    display: block;
-  }
+.card-content {
+  height: 300px;
+  overflow-y: scroll;
+  font-size: 1.1rem;
+}
+.card-content-desktop {
+  height: 230px;
+  padding: 1em;
+  overflow-y: hidden;
+  font-size: 1.1rem;
+}
+
+.card-content-desktop:hover {
+overflow-y: scroll;
 }

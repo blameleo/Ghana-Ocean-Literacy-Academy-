@@ -16,10 +16,10 @@ const About = () => {
             ABOUT US
           </h1>
 
-          <p className="text-[#616974] font-semibold py-5 text-lg">
+          <p className="text-[#616974] font-semibold py-5 text-xl">
           Empowering Tomorrow’s Ocean Leaders Today
           </p>
-          <p className="text-lg">
+          <p className="text-xl px-5 sm:px-0">
           Ghana boasts a breathtaking 560 km coastline along the Atlantic Ocean, a vital resource with multifaceted significance. Beyond its picturesque beauty, this coastal stretch plays a crucial role in fisheries, climate regulation, biodiversity promotion, and transportation. Despite its importance, there is a pressing need to raise awareness about safeguarding this invaluable resource, especially among the younger generation.
           </p>
         </div>
@@ -32,7 +32,7 @@ const About = () => {
           <h1 className="text-pink-600 font-black py-3 text-xl">
           Bridging the Educational Gap
           </h1>
-          <p className="w-1/2 mx-auto text-pink-100 text-lg">
+          <p className=" mx-auto px-5 sm:px-0 text-pink-100 text-xl">
           Regrettably, the importance of our coastline is often overlooked in the education system. From preschool to senior high school, there is a conspicuous absence of ocean-related subjects. As a result, students graduate without fundamental knowledge of the ocean, its impact on daily life, and the imperative to protect it. This educational gap contributes to the ongoing abuse of our ocean and a lack of collective will, even among our leaders, to prioritize its conservation.
           </p>
         </div>
@@ -45,7 +45,7 @@ const About = () => {
           <h1 className="text-pink-600 font-black py-3 text-xl">
           Empowering Future Stewards with FOLA
           </h1>
-          <p className="w-1/2 mx-auto text-pink-100 text-lg">
+          <p className="sm:w-1/2 px-5 sm:px-0 mx-auto text-pink-100 text-xl">
           FOLA, which stands for Future Ocean Leaders Academy, is a pioneering ocean education and outreach initiative. Our mission is to inspire and empower the next generation of ocean enthusiasts, fostering informed decision-makers and advocates for marine environmental protection. Our year-long educational program targets children aged 6 to 14, bridging the gap in ocean literacy in both coastal and inland areas.
           </p>
         </div>
