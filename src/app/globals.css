@@ -32,9 +32,7 @@ body {
   }
 }
 
-.bgimage {
-  background-image: url("../../public/backimage.png");
- }
+
 
  @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */

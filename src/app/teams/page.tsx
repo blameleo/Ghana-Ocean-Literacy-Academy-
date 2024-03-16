@@ -10,7 +10,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
-function page() {
+function Page() {
     // State to track expanded descriptions
     const [expanded, setExpanded] = useState({});
 
@@ -308,4 +308,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

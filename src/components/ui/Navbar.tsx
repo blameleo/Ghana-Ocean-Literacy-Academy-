@@ -23,7 +23,7 @@ const Navbar = () => {
       <nav className=" flex justify-between items-center text-xl bg-slate-950   px-5  h-[10vh] relative z-20">
         <div className="  text-white  ">
           <Link href="/">
-            <img src="/FOLA2.jpg" className="w-8 sm:w-12 rounded-full"/>{" "}
+            <img src="/FOLA2.jpg" className="w-8 sm:w-12 rounded-full" alt=''/>{" "}
           </Link>
         </div>
 

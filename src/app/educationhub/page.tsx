@@ -13,7 +13,7 @@ import {
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import Image from "next/image";
 
-function page() {
+function Page() {
   const [searchTerm, setSearchTerm] = useState("");
   const [open, setOpen] = React.useState(false);
   const [currentPdf, setCurrentPdf] = useState("");
@@ -242,4 +242,4 @@ const renderPdfs = () => {
   );
 }
 
-export default page;
+export default Page;
