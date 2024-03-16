@@ -9,10 +9,8 @@ import Link from "next/link";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 export default function Home() {
   return (
-    <main  className="bg-slate-950  min-h-screen backimage">
-
-      
-      <LampContainer  className=" ">
+    <main className="bg-slate-950  min-h-screen backimage">
+      <LampContainer className=" ">
         {/* <CardContainer> */}
 
         <motion.h1
@@ -36,9 +34,10 @@ export default function Home() {
           {/* <img src="/backimage-removebg.png" alt="" width={64}/> */}
         </motion.h1>
       </LampContainer>
-   
 
-      <BackgroundBeams />
+      <div className="hidden sm:block">
+        <BackgroundBeams />
+      </div>
     </main>
   );
 }
