@@ -10,7 +10,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export default function Home() {
   return (
-    <main className="bg-slate-950  min-h-screen backimage">
+    <main className="bg-slate-950   backimage">
       <LampContainer className=" ">
         {/* <CardContainer> */}
 

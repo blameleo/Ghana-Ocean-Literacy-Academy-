@@ -155,14 +155,18 @@ function page() {
               )}
 
               <p className={twMerge("text-xl mb-4")}>{item.title}</p>
-              <Image
-                    src={item.image}
-                    alt="blog thumbnail"
-                    height="1000"
-                    width="1000"
-                    className="rounded-lg mb-10 object-cover"
-                  />
-              <p>{item.description}</p>
+              <div className="text-sm  prose prose-sm dark:prose-invert">
+              {item?.image && (
+                <Image
+                  src={item.image}
+                  alt="blog thumbnail"
+                  height="1000"
+                  width="1000"
+                  className="rounded-lg mb-10 object-cover"
+                />
+              )}
+              {item.description}
+            </div>
 
               {/* <div className="text-sm  prose prose-sm prose-invert">
                 {item?.image && (
