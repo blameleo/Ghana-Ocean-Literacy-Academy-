@@ -143,14 +143,14 @@ const renderPdfs = () => {
         <div className="flex text-white justify-around pt-2 gap-10">
              <button
               onClick={() => handleDownload(pdf.download, pdf.title)}
-              className="flex items-center justify-around border rounded w-28 bg-[#0c162c] py-2 hover:bg-green-800"
+              className="flex gap-2 items-center px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
             >
               <FaDownload />
               Download
             </button>
             <button
               onClick={() => handleOpen(pdf.link)}
-              className="flex items-center justify-around border rounded w-28 bg-pink-900 hover:bg-blue-800"
+              className="flex gap-2 items-center px-4 py-2 rounded-xl bg-black dark:bg-pink-900 dark:text-white text-white text-xs font-bold"
             >
               <IoEyeSharp />
               View

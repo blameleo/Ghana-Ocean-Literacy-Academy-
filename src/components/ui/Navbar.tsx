@@ -105,7 +105,7 @@ const Navbar = () => {
       <div
         className={`transition-transform duration-300 ease-in-out ${
           openMobileMenu ? "translate-y-16" : "-translate-y-full"
-        } absolute top-0 left-0 w-full z-20`}
+        } absolute top-0 left-0 w-full z-40`}
       >
         <ul className="grid bg-slate-950 text-white text-center text-xl">
           <Link

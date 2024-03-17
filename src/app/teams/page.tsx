@@ -1,6 +1,5 @@
-
 //@ts-nocheck
-'use client'
+"use client";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -11,20 +10,20 @@ import Link from "next/link";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 function Page() {
-    // State to track expanded descriptions
-    const [expanded, setExpanded] = useState({});
+  // State to track expanded descriptions
+  const [expanded, setExpanded] = useState({});
 
-    // Function to toggle description expansion
-    const toggleDescription = (index) => {
-      setExpanded((prev) => ({
-        ...prev,
-        [index]: !prev[index],
-      }));
-    };
+  // Function to toggle description expansion
+  const toggleDescription = (index) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
   const teams = [
     {
       title: "Director",
-      description:  ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
+      description: ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
       University of Ghana. Her teaching and research span paleoclimatic
       and environmental reconstructions of marine ecosystems, marine
       pollution (nutrients, microplastics, heavy metals and their impact
@@ -50,15 +49,14 @@ function Page() {
       Ocean Science. Dr. Mahu is passionate about mentoring the next
       generation of marine scientists in Africa and has mentored several
       undergraduates and graduate students in Ghana. She is a current
-      mentor on the National Geographic STEM Field Assistant Program`
- ,
+      mentor on the National Geographic STEM Field Assistant Program`,
       badge: "Dr. Edem Mahu",
       image:
         "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Programme Manage",
-      description:  ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
+      description: ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
       University of Ghana. Her teaching and research span paleoclimatic
       and environmental reconstructions of marine ecosystems, marine
       pollution (nutrients, microplastics, heavy metals and their impact
@@ -84,15 +82,14 @@ function Page() {
       Ocean Science. Dr. Mahu is passionate about mentoring the next
       generation of marine scientists in Africa and has mentored several
       undergraduates and graduate students in Ghana. She is a current
-      mentor on the National Geographic STEM Field Assistant Program`
- ,
+      mentor on the National Geographic STEM Field Assistant Program`,
       badge: "Kingsley Kojo Darko Abaye",
       image:
         "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Director",
-      description:  ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
+      description: ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
       University of Ghana. Her teaching and research span paleoclimatic
       and environmental reconstructions of marine ecosystems, marine
       pollution (nutrients, microplastics, heavy metals and their impact
@@ -118,15 +115,14 @@ function Page() {
       Ocean Science. Dr. Mahu is passionate about mentoring the next
       generation of marine scientists in Africa and has mentored several
       undergraduates and graduate students in Ghana. She is a current
-      mentor on the National Geographic STEM Field Assistant Program`
- ,
+      mentor on the National Geographic STEM Field Assistant Program`,
       badge: "Dr. Edem Mahu",
       image:
         "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Director",
-      description:  ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
+      description: ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
       University of Ghana. Her teaching and research span paleoclimatic
       and environmental reconstructions of marine ecosystems, marine
       pollution (nutrients, microplastics, heavy metals and their impact
@@ -152,16 +148,14 @@ function Page() {
       Ocean Science. Dr. Mahu is passionate about mentoring the next
       generation of marine scientists in Africa and has mentored several
       undergraduates and graduate students in Ghana. She is a current
-      mentor on the National Geographic STEM Field Assistant Program`
- ,
+      mentor on the National Geographic STEM Field Assistant Program`,
       badge: "Dr. Edem Mahu",
       image:
         "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Director",
-      description: 
-           ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
+      description: ` Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
             University of Ghana. Her teaching and research span paleoclimatic
             and environmental reconstructions of marine ecosystems, marine
             pollution (nutrients, microplastics, heavy metals and their impact
@@ -187,16 +181,14 @@ function Page() {
             Ocean Science. Dr. Mahu is passionate about mentoring the next
             generation of marine scientists in Africa and has mentored several
             undergraduates and graduate students in Ghana. She is a current
-            mentor on the National Geographic STEM Field Assistant Program`
-       ,
+            mentor on the National Geographic STEM Field Assistant Program`,
       badge: "Dr. Edem Mahu",
       image:
         "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Director",
-      description: 
-         `
+      description: `
             Dr. Edem Mahu is a Senior Lecturer of Marine Biogeochemistry at the
             University of Ghana. Her teaching and research span paleoclimatic
             and environmental reconstructions of marine ecosystems, marine
@@ -223,9 +215,8 @@ function Page() {
             Ocean Science. Dr. Mahu is passionate about mentoring the next
             generation of marine scientists in Africa and has mentored several
             undergraduates and graduate students in Ghana. She is a current
-            mentor on the National Geographic STEM Field Assistant Program`
-          
-        ,
+            mentor on the National Geographic STEM Field Assistant Program`,
+
       badge: "Dr. Edem Mahu",
       image:
         "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -234,76 +225,56 @@ function Page() {
 
   const renderTeams = () => {
     return teams.map((team, index) => (
-      <CardContainer key={index} className="inter-var w-[26rem]">
-        <BackgroundGradient className="rounded-[22px] max-w-full p-4 sm:p-10 bg-white dark:bg-zinc-900">
+    
+        <CardContainer key={index} className="inter-var sm:w-[26rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-700 p-[2px] rounded-xl shadow-lg">
+          <CardBody className=" bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+            <CardItem
+              translateZ="50"
+              className="text-xl font-bold text-neutral-600 dark:text-white"
+            >
+              {team.badge}
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            >
+              {team.title}
+            </CardItem>
+            <CardItem translateZ="100" className="w-full mt-4">
+              <Image
+                src={team.image}
+                height="1000"
+                width="1000"
+                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                alt="thumbnail"
+              />
+            </CardItem>
 
-          <CardItem
-            translateZ="50"
-            className="text-xl font-bold text-pink-500 dark:text-pink-500"
-          >
-            {team.badge}
-          </CardItem>
-          <CardItem
-            as="p"
-            translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-          >
-            {team.title}
-          </CardItem>
-          <CardItem translateZ="100" className="w-full mt-4">
-            <Image
-              src={team.image}
-              height="1000"
-              width="1000"
-              className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
-            />
-          </CardItem>
-          <div className="mt-10">
-            {/* Conditionally render description */}
-            {expanded[index] ? (
-              <CardItem
-                translateZ={20}
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-              >
-                <p>{team.description}</p>
-                {/* Toggle button */}
-                <button
-                  onClick={() => toggleDescription(index)}
-                  className="text-xs text-blue-500 cursor-pointer"
-                >
-                  Read Less
-                </button>
-              </CardItem>
-            ) : (
-              <CardItem
-                translateZ={20}
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white ]"
-              >
-                <p>{team.description.substring(0, 300)}</p>
-                {/* Toggle button */}
-                <button
-                  onClick={() => toggleDescription(index)}
-                  className="text-xs text-blue-500 cursor-pointer"
-                >
-                  Read More
-                </button>
-              </CardItem>
-            )}
-          </div>
-        </BackgroundGradient>
-      </CardContainer>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-52 overflow-y-scroll "
+            >
+              {team.description}
+            </CardItem>
+          </CardBody>
+        </CardContainer>
+ 
     ));
   };
   return (
     <div className="bg-slate-950 relative z-20">
       <div>
-        <h1 className="text-4xl font-bold text-center text-white">Meet the <span className="text-pink-500 underline">Team</span> </h1>
+        <h1 className="text-4xl font-bold text-center text-white">
+          Meet the <span className="text-pink-500 underline">Team</span>{" "}
+        </h1>
         <div className="">
-          <div className="grid p-5 sm:p-0 sm:grid-cols-3 ">{renderTeams()}</div>
+          <div className="grid p-10 sm:p-0 sm:grid-cols-3 ">
+            {renderTeams()}
+          </div>
         </div>
       </div>
-      {/* <BackgroundBeams/> */}
     </div>
   );
 }

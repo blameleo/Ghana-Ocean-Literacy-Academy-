@@ -7,6 +7,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export default function Home() {
   return (
     <main className="bg-slate-950  min-h-screen backimage">
@@ -21,23 +22,23 @@ export default function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-10  bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          className="-mt-96  bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
         >
-          <h1 className="text-white  font-bold  ">
+          <h1 className="text-white  font-bold  mt-10">
             Future Ocean{" "}
             <span className="text-yellow-500">Leaders Academy</span>
             <p className="text-[15px] Capitalize py-10 tracking-wide">
               {" "}
               Empowering Tomorrow’s Ocean Leaders Today.
             </p>
+          
           </h1>
-          {/* <img src="/backimage-removebg.png" alt="" width={64}/> */}
+         
         </motion.h1>
+   
       </LampContainer>
 
-      <div className="hidden sm:block">
-        <BackgroundBeams />
-      </div>
     </main>
   );
 }
+
