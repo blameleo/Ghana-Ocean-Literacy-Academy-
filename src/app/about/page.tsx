@@ -137,7 +137,7 @@ function page() {
     },
   ];
   return (
-    <div className=" ">
+    <div className=" bg-slate-950">
       <h1 className="sm:text-4xl text-2xl text-center font-bold text-pink-400">
         ABOUT US
       </h1>
@@ -145,7 +145,7 @@ function page() {
         <StickyScroll content={content} />
       </div>
       <TracingBeam className="px-6 block sm:hidden h-screen ">
-        <div className="w-full  antialiased pt-4 relative   ">
+        <div className="w-full  antialiased pt-4 relative  bg-slate-950 ">
           {dummyContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10  ">
               {item.badge && (
@@ -155,7 +155,7 @@ function page() {
               )}
 
               <p className={twMerge("text-xl mb-4")}>{item.title}</p>
-              <div className="text-sm  prose prose-sm dark:prose-invert">
+              <div className="text-sm  prose prose-sm prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
