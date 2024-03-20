@@ -9,104 +9,120 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { LiaInfoSolid } from "react-icons/lia";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
-
-function NavList() {
-  const currentUrl = usePathname();
-  return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-xl ">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          href="/"
-          className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
-            currentUrl === "/"
-              ? "border-b-4 text-white border-pink-500"
-              : "text-white"
-          }`}
-        >
-          Home
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          href="/about"
-          className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
-            currentUrl === "/about"
-              ? "border-b-4 text-white border-pink-500"
-              : "text-white"
-          }`}
-        >
-          About
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          href="/teams"
-          className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
-            currentUrl === "/teams"
-              ? "border-b-4 text-white border-pink-500"
-              : "text-white"
-          }`}
-        >
-          Teams
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          href="/educationhub"
-          className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
-            currentUrl === "/educationhub"
-              ? "border-b-4 text-white border-pink-500"
-              : "text-white"
-          }`}
-        >
-          Education Hub
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          href="/activities"
-          className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
-            currentUrl === "/activities"
-              ? "border-b-4 text-white border-pink-500"
-              : "text-white"
-          }`}
-        >
-          Activities
-        </Link>
-      </Typography>
-    </ul>
-  );
-}
 
 export function NavbarSimple() {
   const [openNav, setOpenNav] = React.useState(false);
+  const router = useRouter();
+
+  function NavList() {
+    const currentUrl = usePathname();
+    return (
+      <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-xl ">
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-medium"
+        >
+          <p
+            onClick={() => {
+              router.push("/");
+              setOpenNav(!openNav);
+            }}
+            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+              currentUrl === "/"
+                ? "border-b-4 text-white border-pink-500"
+                : "text-white"
+            }`}
+          >
+            Home
+          </p>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-medium"
+        >
+          <p
+            onClick={() => {
+              router.push("/about");
+              setOpenNav(!openNav);
+            }}
+            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+              currentUrl === "/about"
+                ? "border-b-4 text-white border-pink-500"
+                : "text-white"
+            }`}
+          >
+            About
+          </p>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-medium"
+        >
+          <p
+            onClick={() => {
+              router.push("/teams");
+              setOpenNav(!openNav);
+            }}
+            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+              currentUrl === "/teams"
+                ? "border-b-4 text-white border-pink-500"
+                : "text-white"
+            }`}
+          >
+            Teams
+          </p>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-medium"
+        >
+          <p
+            onClick={() => {
+              router.push("/educationhub");
+              setOpenNav(!openNav);
+            }}
+            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+              currentUrl === "/educationhub"
+                ? "border-b-4 text-white border-pink-500"
+                : "text-white"
+            }`}
+          >
+            Education Hub
+          </p>
+        </Typography>
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-medium"
+        >
+          <p
+            onClick={() => {
+              router.push("/activities");
+              setOpenNav(!openNav);
+            }}
+            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+              currentUrl === "/activities"
+                ? "border-b-4 text-white border-pink-500"
+                : "text-white"
+            }`}
+          >
+            Activities
+          </p>
+        </Typography>
+      </ul>
+    );
+  }
 
   const handleWindowResize = () =>
     window.innerWidth >= 960 && setOpenNav(false);
