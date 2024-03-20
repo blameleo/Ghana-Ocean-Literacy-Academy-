@@ -154,8 +154,8 @@ function page() {
                 </h2>
               )}
 
-              <p className={twMerge("text-xl mb-4")}>{item.title}</p>
-              <div className="text-sm  prose prose-sm prose-invert">
+              <p className={twMerge("text-xl mb-4 text-white")}>{item.title}</p>
+              <div className="text-sm text-white ">
               {item?.image && (
                 <Image
                   src={item.image}
