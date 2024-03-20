@@ -17,7 +17,7 @@ function NavList() {
 
     const currentUrl = usePathname();
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-xl">
       <Typography
         as="li"
         variant="small"
