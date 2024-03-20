@@ -121,7 +121,7 @@ function page() {
         <StickyScroll content={content} />
       </div>
       <TracingBeam className="px-6 block sm:hidden ">
-        <div className="w-full   pt-4 relative  bg-slate-950 ">
+        <div className="w-full   pt-4 relative  bg-slate-950 h-[1800px]">
           {dummyContent.map((item, index) => (
             <div key={`content-${index}`} className="py-10  ">
               {item.badge && (
