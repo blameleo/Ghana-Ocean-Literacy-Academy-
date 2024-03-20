@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { LiaInfoSolid } from "react-icons/lia";
+import { LiaInfoCircleSolid, LiaInfoSolid } from "react-icons/lia";
 import { MdOutlineGroups2, MdCastForEducation } from "react-icons/md";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { GiHamburger } from "react-icons/gi";
@@ -37,7 +37,7 @@ const Navbar = () => {
                     : "text-white"
                 }`}
               >
-                <LiaInfoSolid size={25} />
+                <LiaInfoCircleSolid size={25} />
                 <p className="">About</p>
               </div>
             </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
         </div>
         
       </nav>
-
+      {/* mobile menu */}
       <div
         className={`transition-transform duration-300 ease-in-out ${
           openMobileMenu ? "translate-y-16" : "-translate-y-full"

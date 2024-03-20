@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import Navbar from "@/components/ui/Navbar";
+import { NavbarSimple } from "@/components/Material-tailwind-Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       
-      <body className="">
-        <Navbar/>
+      <body className="bg-slate-950">
+        {/* <Navbar/> */}
+        <NavbarSimple/>
         {children}</body>
     </html>
   );

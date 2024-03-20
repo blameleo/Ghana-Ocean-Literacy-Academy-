@@ -76,46 +76,7 @@ function Page() {
     },
   ];
 
-//   const renderPdfs = () => {
-//     const filteredPdfs = pdfs.filter((pdf) =>
-//       pdf.title.toLowerCase().includes(searchTerm.toLowerCase())
-//     );
 
-//     return filteredPdfs.map((pdf, index) => {
-//       return (
-//         <div
-//           key={index}
-//           className=" rounded bg-gray-100 h-[300px] p-5 hover:scale-105 transition duration-700"
-//         >
-//           <div className="">
-//             <img
-//               src={pdf.image}
-//               alt=""
-//               className="object-cover h-48 w-96 rounded"
-//             />
-//           </div>
-//           <h1 className="text-center text-xl">{pdf.title}</h1>
-
-//           <div className="flex text-white justify-around pt-2 gap-10">
-//             <Button
-//               onClick={() => handleDownload(pdf.download, pdf.title)}
-//               className="flex items-center justify-around  rounded w-28 bg-[#0c162c] py-2 hover:bg-green-800"
-//             >
-//               <FaDownload />
-//               Download
-//             </Button>
-//             <Button
-//               onClick={() => handleOpen(pdf.link)}
-//               className="flex items-center justify-around  rounded w-28 bg-pink-900 hover:bg-blue-800"
-//             >
-//               <IoEyeSharp />
-//               View
-//             </Button>
-//           </div>
-//         </div>
-//       );
-//     });
-//   };
 
 const renderPdfs = () => {
     const filteredPdfs = pdfs.filter((pdf) =>
