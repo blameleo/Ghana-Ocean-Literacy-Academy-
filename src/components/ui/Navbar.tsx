@@ -20,7 +20,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <nav className=" flex justify-between items-center text-xl bg-slate-950   px-5  h-[10vh] relative z-20">
+      <nav className=" flex justify-between items-center text-xl bg-slate-950   px-5  min-h-[10vh] relative z-20">
         <div className="  text-white  ">
           <Link href="/">
             <img src="/FOLA2.jpg" className="w-8 sm:w-12 rounded-full" alt=''/>{" "}
@@ -95,11 +95,7 @@ const Navbar = () => {
             />
           )}
         </div>
-        <Link href="/login" className="hidden">
-          <button className=" cursor-pointer  hover:border-b-4  transition duration-300 ease-in-out text-white  p-3 rounded bg-pink-400">
-            Log in{" "}
-          </button>
-        </Link>
+        
       </nav>
 
       <div
