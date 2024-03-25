@@ -33,7 +33,7 @@ const Navbar = () => {
               <div
                 className={`flex flex-col items-center cursor-pointer  hover:border-b-4 pb-2 transition duration-300 ease-in-out ${
                   currentUrl === "/about"
-                    ? "border-b-4 text-white border-pink-500"
+                    ? "border-b-4 text-white border-yellow-500"
                     : "text-white"
                 }`}
               >

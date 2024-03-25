@@ -30,7 +30,7 @@ export function NavbarSimple() {
           
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -47,7 +47,7 @@ export function NavbarSimple() {
          
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/about"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -64,7 +64,7 @@ export function NavbarSimple() {
            
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/teams"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -81,7 +81,7 @@ export function NavbarSimple() {
             
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/educationhub"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -98,7 +98,7 @@ export function NavbarSimple() {
           
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/activities"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
