@@ -100,7 +100,7 @@ function Page() {
   const renderTeams = () => {
     return teams.map((team, index) => (
     
-        <CardContainer key={index} className="inter-var border-4  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-700 p-[2px] rounded-xl shadow-lg">
+        <CardContainer key={index} className="inter-var  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-700 p-[2px] rounded-xl shadow-lg">
           <CardBody className="  relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <CardItem
               translateZ="50"
@@ -128,7 +128,7 @@ function Page() {
             <CardItem
               as="p"
               translateZ="60"
-              className=" text-sm max-w-sm mt-2 text-neutral-300 h-52 overflow-y-scroll "
+              className=" text-sm  my-5 text-neutral-300   h-52 overflow-y-scroll "
             >
               {team.description}
             </CardItem>
