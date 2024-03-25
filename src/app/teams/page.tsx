@@ -226,7 +226,7 @@ function Page() {
   const renderTeams = () => {
     return teams.map((team, index) => (
     
-        <CardContainer key={index} className="inter-var sm:w-[26rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-700 p-[2px] rounded-xl shadow-lg">
+        <CardContainer key={index} className="inter-var border-4  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-700 p-[2px] rounded-xl shadow-lg">
           <CardBody className="  relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <CardItem
               translateZ="50"
@@ -270,7 +270,7 @@ function Page() {
           Meet the <span className="text-pink-500 underline">Team</span>{" "}
         </h1>
         <div className="">
-          <div className="grid p-10 sm:p-0 sm:grid-cols-3 ">
+          <div className="grid p-7 lg:grid-cols-2  ">
             {renderTeams()}
           </div>
         </div>

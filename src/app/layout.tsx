@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-slate-950">
-      
+      <link rel="icon" href="/FOLA2.png" sizes="any" />
       <body className="bg-slate-950">
         {/* <Navbar/> */}
         <NavbarSimple/>

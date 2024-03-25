@@ -40,7 +40,7 @@ function Page() {
   const pdfs = [
     {
       image:
-        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+        "/fola4.png",
       title: "marine science 101",
       link: "https://drive.google.com/file/d/1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg/preview",
       download:
@@ -48,37 +48,35 @@ function Page() {
     },
     {
       image:
-        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+        "/fola4.png",
       title: "a tale about life",
       link: "https://drive.google.com/file/d/1K7zwtkYF2H59JDs9B2s5t8hxIbl-G_qb/preview",
       download: "",
     },
     {
       image:
-        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+        "/fola4.png",
       title: "two young trolls",
       link: "https://drive.google.com/file/d/1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg/preview",
       download: "",
     },
     {
       image:
-        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+        "/fola4.png",
       title: "playground menace",
       link: "https://drive.google.com/file/d/1K7zwtkYF2H59JDs9B2s5t8hxIbl-G_qb/preview",
       download: "",
     },
     {
       image:
-        "https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/28163447/36C3-PDF-encryption-featured2.jpg",
+        "/fola4.png",
       title: "javascript is a blast",
       link: "https://drive.google.com/file/d/1fhendJ3n05yTyUZ6mwK0e45niSwLhDwg/preview",
       download: "",
     },
   ];
 
-
-
-const renderPdfs = () => {
+  const renderPdfs = () => {
     const filteredPdfs = pdfs.filter((pdf) =>
       pdf.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -87,22 +85,21 @@ const renderPdfs = () => {
       return (
         <div
           key={index}
-          className="   h-[300px] p-5 mb-20"
+          className="p-5 mb-10 border border-violet-500 rounded-lg "
         >
-          <BackgroundGradient className="rounded-[22px] max-w-full p-4 sm:p-10 bg-white dark:bg-zinc-900">
-        <Image
-          src={pdf.image}
-          alt="jordans"
-          height="400"
-          width="400"
-          className="object-contain"
-        />
-        <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
-          {pdf.title}
-        </p>
- 
-        <div className="flex text-white justify-around pt-2 gap-10">
-             <button
+          <Image
+            src={pdf.image}
+            alt="jordans"
+            height="400"
+            width="400"
+            className="object-contain bg-white rounded-lg p-5"
+          />
+          <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+            {pdf.title}
+          </p>
+
+          <div className="flex text-white justify-between pt-2 ">
+            <button
               onClick={() => handleDownload(pdf.download, pdf.title)}
               className="flex gap-2 items-center px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
             >
@@ -116,9 +113,7 @@ const renderPdfs = () => {
               <IoEyeSharp />
               View
             </button>
-           </div>
-      
-      </BackgroundGradient>
+          </div>
         </div>
       );
     });
@@ -178,7 +173,7 @@ const renderPdfs = () => {
         </form>
       </div>
 
-      <div className="  grid sm:grid-cols-3  sm:gap-20 sm:p-10 p-5">
+      <div className="  grid sm:grid-cols-3 gap-5 p-5 lg:grid-cols-4">
         {renderPdfs()}
       </div>
       <Dialog

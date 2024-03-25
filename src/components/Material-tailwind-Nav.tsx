@@ -23,14 +23,12 @@ export function NavbarSimple() {
         <Typography
           as="li"
           variant="small"
+          variant="h3"
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <p
-            onClick={() => {
-              router.push("/");
-              setOpenNav(!openNav);
-            }}
+          <Link href="/"
+          
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/"
                 ? "border-b-4 text-white border-pink-500"
@@ -38,19 +36,16 @@ export function NavbarSimple() {
             }`}
           >
             Home
-          </p>
+          </Link>
         </Typography>
         <Typography
           as="li"
-          variant="small"
+          variant="h3"
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <p
-            onClick={() => {
-              router.push("/about");
-              setOpenNav(!openNav);
-            }}
+          <Link href='/about'
+         
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/about"
                 ? "border-b-4 text-white border-pink-500"
@@ -58,19 +53,16 @@ export function NavbarSimple() {
             }`}
           >
             About
-          </p>
+          </Link>
         </Typography>
         <Typography
           as="li"
-          variant="small"
+          variant="h3"
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <p
-            onClick={() => {
-              router.push("/teams");
-              setOpenNav(!openNav);
-            }}
+          <Link href='/teams'
+           
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/teams"
                 ? "border-b-4 text-white border-pink-500"
@@ -78,19 +70,16 @@ export function NavbarSimple() {
             }`}
           >
             Teams
-          </p>
+          </Link>
         </Typography>
         <Typography
           as="li"
-          variant="small"
+          variant="h3"
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <p
-            onClick={() => {
-              router.push("/educationhub");
-              setOpenNav(!openNav);
-            }}
+          <Link href="/educationhub"
+            
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/educationhub"
                 ? "border-b-4 text-white border-pink-500"
@@ -98,19 +87,16 @@ export function NavbarSimple() {
             }`}
           >
             Education Hub
-          </p>
+          </Link>
         </Typography>
         <Typography
           as="li"
-          variant="small"
+          variant="h3"
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <p
-            onClick={() => {
-              router.push("/activities");
-              setOpenNav(!openNav);
-            }}
+          <Link href="/activities"
+          
             className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
               currentUrl === "/activities"
                 ? "border-b-4 text-white border-pink-500"
@@ -118,7 +104,7 @@ export function NavbarSimple() {
             }`}
           >
             Activities
-          </p>
+          </Link>
         </Typography>
       </ul>
     );
@@ -136,7 +122,7 @@ export function NavbarSimple() {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl border-none rounded-none px-6 py-3 bg-slate-950 ">
+    <Navbar className="mx-auto  border-none rounded-none px-6 py-3 bg-slate-950">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -144,7 +130,9 @@ export function NavbarSimple() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
-          <img src="/FOLA2.jpg" className="w-8 sm:w-12 rounded-full" alt="" />{" "}
+          <Link href='/'>
+          <img src="/FOLA2.png" className="w-8 sm:w-28 " alt="" />{" "}
+          </Link>
         </Typography>
         <div className="hidden lg:block">
           <NavList />

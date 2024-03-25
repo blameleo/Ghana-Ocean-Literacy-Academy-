@@ -98,7 +98,7 @@ export const LampContainer = ({
 
       <div className="relative z-50 flex -translate-y-[0.5rem] flex-col items-center px-5">
         {children}
-    <img src="/backimage-removebg.png" alt="" className=" " width={900} />
+    <img src="/backimage-removebg.png" alt="" className="sm:scale-150 scale-150 sm:pt-10" width={950} />
       </div>
     </div>
   );

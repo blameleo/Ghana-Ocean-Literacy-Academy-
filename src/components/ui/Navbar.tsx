@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <div className=" col-span-8 flex justify-end sm:justify-start">
           <ul className="md:flex   items-center gap-16 hidden">
-            <Link href="/about">
+            {/* <Link href="/about">
               <div
                 className={`flex flex-col items-center cursor-pointer  hover:border-b-4 pb-2 transition duration-300 ease-in-out ${
                   currentUrl === "/about"
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <LiaInfoCircleSolid size={25} />
                 <p className="">About</p>
               </div>
-            </Link>
+            </Link> */}
 
             <Link href="/teams">
               <div
@@ -98,7 +98,7 @@ const Navbar = () => {
         
       </nav>
       {/* mobile menu */}
-      <div
+      {/* <div
         className={`transition-transform duration-300 ease-in-out ${
           openMobileMenu ? "translate-y-16" : "-translate-y-full"
         } absolute top-0 left-0 w-full z-40`}
@@ -140,7 +140,7 @@ const Navbar = () => {
             Activities
           </Link>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
