@@ -131,9 +131,9 @@ const renderPdfs = () => {
     <div className="bg-slate-950 pb-20">
       <h1 className="text-center text-white text-5xl ">
         {" "}
-        <span className="text-pink-500 underline">PDF</span> hub
+        <span className="text-yellow-500 underline">PDF</span> hub
       </h1>
-      <div className="bg-gradient-to-bl from-slate-950  via-slate-950 to-pink-500 py-10 relative">
+      <div className="bg-gradient-to-bl from-slate-950  via-slate-950 to-blue-500 py-10 relative">
         <form className=" w-[50%] mx-auto ">
           <label
             htmlFor="default-search"

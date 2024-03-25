@@ -31,9 +31,9 @@ export function NavbarSimple() {
               router.push("/");
               setOpenNav(!openNav);
             }}
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -51,9 +51,9 @@ export function NavbarSimple() {
               router.push("/about");
               setOpenNav(!openNav);
             }}
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/about"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -71,9 +71,9 @@ export function NavbarSimple() {
               router.push("/teams");
               setOpenNav(!openNav);
             }}
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/teams"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -91,9 +91,9 @@ export function NavbarSimple() {
               router.push("/educationhub");
               setOpenNav(!openNav);
             }}
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/educationhub"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -111,9 +111,9 @@ export function NavbarSimple() {
               router.push("/activities");
               setOpenNav(!openNav);
             }}
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/activities"
-                ? "border-b-4 text-white border-pink-500"
+                ? "border-b-4 text-white border-teal-500"
                 : "text-white"
             }`}
           >
@@ -144,7 +144,7 @@ export function NavbarSimple() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
-          <img src="/FOLA2.jpg" className="w-8 sm:w-12 rounded-full" alt="" />{" "}
+          <img src="/FOLA4.png" className="w-14 sm:w-20 full" alt="" />{" "}
         </Typography>
         <div className="hidden lg:block">
           <NavList />
