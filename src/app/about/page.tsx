@@ -44,15 +44,15 @@ function page() {
         <>
           <p>
             Ghana boasts a breathtaking 560 km coastline along the Atlantic
-            Ocean, a vital resource with multifaceted significance. Beyond its
-            picturesque beauty, this coastal stretch plays a crucial role in
+            Ocean, a vital resource with diverse significance. Beyond its
+            beauty, this coastal stretch plays a crucial role in
             fisheries, climate regulation, biodiversity promotion, and
             transportation.
           </p>
           <br />
           <p>
             Despite its importance, there is a pressing need to raise awareness
-            about safeguarding this invaluable resource, especially among the
+            about safeguarding this vital resource, especially among the
             younger generation.
           </p>
         </>
@@ -67,9 +67,9 @@ function page() {
           <p>
             Regrettably, the importance of our coastline is often overlooked in
             the education system. From preschool to senior high school, there is
-            a conspicuous absence of ocean-related subjects. As a result,
-            students graduate without fundamental knowledge of the ocean, its
-            impact on daily life, and the imperative to protect it.
+            a clear absence of ocean-related subjects. As a result,
+            students graduate without basic knowledge of the ocean, its
+            impact on our daily life, and the need to protect it.
           </p>
           <br />
           <p>

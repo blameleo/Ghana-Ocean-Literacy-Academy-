@@ -23,21 +23,24 @@ function Page() {
   const teams = [
     {
       title: "Director",
-      description: ` Dr. Edem Mahu is not your ordinary scientist - she's on a mission to uncover the secrets of the sea and inspire the next generation of marine scientists! As the Director of our organization, she brings her expertise in Marine Biogeochemistry to the table, along with her boundless enthusiasm for all things ocean-related.
+      description: `Introducing Dr. Edem Mahu, a scientist with a passion for inspiring the next generation of future marine explorers. Leading our team as the Captain, she brings her expertise in Marine Biogeochemistry to our adventures, filled with excitement for all things sea-related.
 
-      With a background in paleoclimatic and environmental reconstructions, Dr. Edem Mahu is always diving deep into research about marine ecosystems. From studying marine pollution to exploring nature-based solutions for coastal challenges, she's at the forefront of protecting our precious oceans.
+      Dr. Edem Mahu dives deep into paleoclimatic and environmental studies, exploring the complex  web of marine ecosystems. Whether tackling marine pollution or advocating for nature-based solutions to coastal challenges, she takes the lead in protecting our oceans.
       
-      Dr. Edem Mahu is not just a scientist; she's also a leader in the field of marine conservation. She heads up exciting projects like "Oyster Reef Restoration and Conservation for Livelihood and Ecosystem Protection" and "Mangroves as nature-based solutions to coastal hazards". Her work has earned her recognition from prestigious organizations like the Royal Society and the African Academy of Sciences.
+      Beyond her scientific pursuits, Dr. Edem Mahu is a pioneer in marine conservation, guiding impactful projects like "Oyster Reef Restoration and Conservation for Livelihood and Ecosystem Protection" and "MANCOGA". She is also a Fellow of the Royal Society's Future Leaders African Independent Research (FLAIR) Programme. As a research fellow on the African Academy of Sciences' AU-EU ARISE Programme, she heads the study "Oyster Shell Models for Hindcasting Holocene Environmental Conditions in Equatorial Atlantic Coastal Waters of Africa". Additionally, she contributes to The Ocean Best Practices system as a board member.
       
-      But Dr. Edem Mahu's passion doesn't stop there - she's dedicated to sharing her love for the ocean with kids everywhere! From mentoring budding marine scientists to leading educational programs like the National Geographic STEM Field Assistant Program, she's making waves in inspiring the next generation to care for our oceans.
+      Dr. Mahu's accomplishments include receiving the 2022 AGU Africa Award for Research Excellence in Ocean Science. Yet, her dedication extends further as she shares her love for the ocean with children worldwide. From mentoring aspiring marine scientists to leading educational initiatives like the National Geographic STEM Field Assistant Program, she's shaping the next generation's commitment to ocean conservation.
       
-      Join Dr. Edem Mahu on an adventure beneath the waves and discover the wonders of the sea with us!`,
+      Embark on an exciting journey beneath the waves with Dr. Edem Mahu and uncover the captivating wonders of the sea with us.
+       `,
       badge: "Dr. Edem Mahu",
       image: "/DR-MAHU.jpg",
     },
     {
       title: "Programme Manager",
-      description: `Kingsley is the passionate navigator at the helm of FOLA - the Future Ocean Leaders Academy. Currently pursuing an MPhil, he serves as the dedicated Program Manager, steering FOLA towards success. Although still navigating the academic seas, Kingsley is setting sail with a mission. His expertise in Marine Pollution, coupled with experience as a Search and Rescue Officer and Director of Programs at a children's well-being NGO, makes him the perfect captain for FOLA. In his role, Kingsley ensures a smooth voyage for FOLA, coordinating with all teams to make our oceanic adventures a hit. His principle is simple yet powerful:(Get things done) and his greatest joy comes from putting smiles on the faces of children. Join Kingsley and the FOLA crew on this fantastic oceanic journey, where learning is fun, and adventures never end. `,
+      description: `Kingsley is a dedicated member of the FOLA - the Future Ocean Leaders Academy team, serving as the Programme Manager. Although still navigating the academic seas, Kingsley is setting sail with a mission, currently pursuing an MPhil, he brings passion and expertise to his role, steering FOLA towards success under the guidance of our Director. With a background in Marine Pollution and experience as a Search and Rescue Officer and Director of Programmes at a children's well-being NGO, Kingsley brings invaluable leadership to our academy. His commitment to getting things done ensures smooth sailing for FOLA, as he coordinates with all teams to create enriching oceanic experiences. Kingsley finds fulfillment in bringing smiles to children's faces and invites you to join him and the FOLA crew on an exciting journey where learning is engaging and adventures are endless.
+
+      `,
       badge: "Kingsley Kojo Darko Abaye",
       image: "/king123.jpg",
     },
@@ -65,7 +68,7 @@ function Page() {
 
       badge: "Dorcas Antwi",
       image:
-        "/DORCAS.jpg",
+        "/DORCAS_new.jpg",
     },
     {
       title: "Adventure Co-Lead",
@@ -100,7 +103,7 @@ function Page() {
   const renderTeams = () => {
     return teams.map((team, index) => (
     
-        <CardContainer key={index} className="inter-var  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-700 p-[2px] rounded-xl shadow-lg">
+        <CardContainer key={index} className="inter-var  bg-gradient-to-r from-yellow-500 via-white-500 to-blue-700 p-[2px] rounded-xl shadow-lg">
           <CardBody className="  relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <CardItem
               translateZ="50"

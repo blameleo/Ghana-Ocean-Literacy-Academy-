@@ -28,7 +28,7 @@ export function NavbarSimple() {
         >
           <Link href="/"
           
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/"
                 ? "border-b-4 text-white border-teal-500"
                 : "text-white"
@@ -45,7 +45,7 @@ export function NavbarSimple() {
         >
           <Link href='/about'
          
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/about"
                 ? "border-b-4 text-white border-teal-500"
                 : "text-white"
@@ -62,7 +62,7 @@ export function NavbarSimple() {
         >
           <Link href='/teams'
            
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/teams"
                 ? "border-b-4 text-white border-teal-500"
                 : "text-white"
@@ -79,7 +79,7 @@ export function NavbarSimple() {
         >
           <Link href="/educationhub"
             
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/educationhub"
                 ? "border-b-4 text-white border-teal-500"
                 : "text-white"
@@ -96,7 +96,7 @@ export function NavbarSimple() {
         >
           <Link href="/activities"
           
-            className={`flex items-center justify-center hover:text-blue-500 transition-colors ${
+            className={`flex items-center justify-center hover:text-yellow-500 transition-colors ${
               currentUrl === "/activities"
                 ? "border-b-4 text-white border-teal-500"
                 : "text-white"
@@ -130,7 +130,7 @@ export function NavbarSimple() {
           className="mr-4 cursor-pointer py-1.5"
         >
           <Link href='/'>
-          <img src="/FOLA2.png" className="w-8 sm:w-28 " alt="" />{" "}
+          <img src="/FOLA4.png" className="w-8 sm:w-28 " alt="" />{" "}
           </Link>
         </Typography>
         <div className="hidden lg:block">
