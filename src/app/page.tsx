@@ -8,6 +8,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+ // import Font Awesome CSS
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
+
+
 export default function Home() {
   return (
     <main className="bg-slate-950 ">

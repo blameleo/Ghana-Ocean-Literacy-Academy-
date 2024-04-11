@@ -4,6 +4,7 @@ import "./globals.css";
 import Head from "next/head";
 import Navbar from "@/components/ui/Navbar";
 import { NavbarSimple } from "@/components/Material-tailwind-Nav";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,9 @@ export default function RootLayout({
       <body className="bg-slate-950">
         {/* <Navbar/> */}
         <NavbarSimple/>
-        {children}</body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
