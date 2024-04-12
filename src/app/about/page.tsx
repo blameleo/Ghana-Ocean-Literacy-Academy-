@@ -101,7 +101,7 @@ function page() {
         </>
       ),
       badge: "",
-      image: "/IMG_0189.jpg",
+      image: "/Hands.jpg",
     },
   ];
   return (
