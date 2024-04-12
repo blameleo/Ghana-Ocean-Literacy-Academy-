@@ -62,14 +62,14 @@ const ActivitiesPage = () => {
       mainActivity: "Beating Marine Pollution.",
       subActivities: [
         "Graphical presentation of different types of marine pollution.",
-        "Interactive activity: “Sort the Pollution” game with items to categorize into recyclable, non-recyclable, and compostable.",
+        "Interactive activity: “Sort the Pollutant” game with items to categorize into recyclable, non-recyclable, and compostable.",
         "Group project: Making a simple water filtration system (creative activity).",
       ],
     },
     {
       month: "October",
-      name: "Second Laboratory Session",
-      mainActivity: "Tiny Sealife under the Microscope",
+      name: "Time in the Laboratory",
+      mainActivity: "Tiny Creatures in our Oceans",
       subActivities: [
         "Microscopic examination of plankton and other small marine organisms.",
         "Drawing and labeling observed organisms.",

@@ -51,7 +51,7 @@ function page() {
           </p>
           <br />
           <p>
-            Despite its importance, there is a pressing need to raise awareness
+            There is a pressing need to raise awareness
             about safeguarding this vital resource, especially among the
             younger generation.
           </p>
@@ -65,15 +65,14 @@ function page() {
       description: (
         <>
           <p>
-            Regrettably, the importance of our coastline is often overlooked in
-            the education system. From preschool to senior high school, there is
+            Regrettably, the importance of our oceans is not adequately addressed in the school curriculum. From preschool to senior high school, there is
             a clear absence of ocean-related subjects. As a result,
             students graduate without basic knowledge of the ocean, its
             impact on our daily life, and the need to protect it.
           </p>
           <br />
           <p>
-            This educational gap contributes to the ongoing abuse of our ocean
+            This knowledge and awareness gap contributes to the ongoing abuse and apathy for the ocean
             and a lack of collective will, even among our leaders, to prioritize
             its conservation.
           </p>
@@ -102,7 +101,7 @@ function page() {
         </>
       ),
       badge: "",
-      image: "/Team Holding hands.jpg",
+      image: "/IMG_0189.jpg",
     },
   ];
   return (
